@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Form</title>
+    <style>
+      .error {
+        color: crimson;
+        margin: 4px 0 12px;
+      }
+
+      #success-message {
+        color: green;
+        margin-top: 12px;
+      }
+      #whatsapp-link {
+    display: none;
+}
+    </style>
+  </head>
+  <body>
+    <form id="booking-form">
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+      <p class="error" id="name-error"></p>
+
+      <label for="email">Email</label>
+      <input id="email" type="text" />
+      <p class="error" id="email-error"></p>
+
+      <label for="phone">Phone</label>
+      <input id="phone" type="text" />
+      <p class="error" id="phone-error"></p>
+
+      <label for="service">Service</label>
+      <select id="service">
+        <option value="">Choose a service</option>
+        <option value="Haircut">Haircut</option>
+        <option value="Coloring">Coloring</option>
+        <option value="photographer">photographer</option>
+        <option value="Styling">Styling</option>
+      </select>
+      <p class="error" id="service-error"></p>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4"></textarea>
+      <p class="error" id="message-error"></p>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <h1 id="success-message"></h1>
+
+    <a id="whatsapp-link" href="#" target="_blank">
+  Send booking via WhatsApp
+</a>
+    <script src="script.js"></script>
+  </body>
+</html>
